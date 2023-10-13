@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Your Tech Essentials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">ACME</div>   
+        <div>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./team.html">Meet Our Team</a></li>
+            <li><a href="./testimonials.html">Testimonials</a></li>
+        </ul>
+        </div>
+    </nav>
+    <nav class="products">
+        <a href="#headphones">Headphones</a>
+        <a href="#chargers">Chargers</a>
+        <a href="#phonecases">Phone Cases</a>
+        <a href="#customcases">Customized Phone Cases</a>
+    </nav>
+    <header>
+        <h1 class="prod-header">Our Products</h1>
+    </header>
+    <section id="products">
+        <h1>Headphones</h1>
+        <section class="box-container" id="headphones">
+            <div class="box">
+                <img src="./headphone-1.jpg" alt="Headphones Model 1">
+                <h2>Headphones Model 1</h2>
+                <p>Wireless on-ear headphones with noise-canceling technology.</p>
+                <p>Price: $99.99</p>
+            </div>
+
+            <div class="box">
+                <img src="./headphone-2.jpg" alt="Headphones Model 2">
+                <h2>Headphones Model 2</h2>
+                <p>High-quality headphones with crisp sound.</p>
+                <p>Price: $79.99</p>
+
+            </div>
+        </section>
+        <h1>Chargers</h1>
+        <section class="box-container" id="chargers">
+            <div class="box">
+                <img src="./charger-1.jpg" alt="Charger Model 1">
+                <h2>Charger Model 1</h2>
+                <p>Fast-charging USB-C charger for all your devices.</p>
+                <p>Price: From $29.99</p>
+            </div>
+            <div class="box">
+                <img src="./charger-2.png" alt="Charger Model 2">
+                <h2>Charger Model 2</h2>
+                <p>Wireless charging pad compatible with various smartphones.</p>
+                <p>Price: From $19.99</p>
+            </div>
+            <div class="box">
+                <img src="./charger-3.jpg" alt="Chargers Model Next Season">
+                <h2>Chargers Model Next Season</h2>
+                <p>New Customized Charger sets is coming up!</p>
+                <p>Price: Up to $200 based on customization</p>
+        </section>
+        <h1>Phone Cases</h1>
+        <section class="box-container" id="phonecases">
+            <div class="box">
+                <img src="./case-1.jpg" alt="Phone Case Model 1">
+                <h2>Phone Case Model 1</h2>
+                <p>Stylish and durable phone case for iPhone and Android.</p>
+                <p>Price: From $14.99</p>
+            </div>
+            <div class="box">
+                <img src="./case-2.jpg" alt="Phone Case Model 2">
+                <h2>Phone Case Model 2</h2>
+                <p>Fuctional and protective phone case with various designs.</p>
+                <p>Price: From $12.99</p>
+            </div>
+        </section>
+        <h1>Custom Phone Cases</h1>
+        <section class="box-container" id="customcases">
+            <div class="box">
+                <img src="./custom-1.png" alt="Personalized Custom Phone Cases Service">
+                <p>Design your own phone case to make it truly unique. Add your photos, text, and style it your way.</p>
+            </div>
+            <div class="box">
+                <img src="./custom-2.png" alt="Personalized Custom Phone Cases Service">
+                <p>Price: Varies based on customization</p>
+            </div>
+        </section>
+        <section id="Contact-link" style="text-align: center;">
+            <h1>Contact US</h1>
+            <p>Click here to send your ideas for new products, and check the progress of our new R&D products!</p>
+            <!-- Email link -->
+            <p> <a href="mailto:qi113@purdue.edu">Click me</a></p>
+        </section>
+    </section>
+    <footer>
+        <p>Last updated: <span id="lastUpdated"></span></p>
+        <script>
+        document.getElementById("lastUpdated").innerHTML = new Date().toDateString();
+        </script>
+        <p>Copyright &#169; 2023 ACME Electronics. All Rights Reserved </p>
+    </footer>
+</body>
+</html>

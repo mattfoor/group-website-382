@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ACME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<nav>
+        <div class="logo">ACME</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products and Services</a></li>
+                <li><a href="./team.html">Meet Our Team</a></li>
+                <li><a href="./testimonials.html">Testimonials</a></li>
+            </ul>
+        </div>
+    </nav>
+	<section id="about">
+		<section class="img-about">
+		<img src="https://www.charlestonrealtors.com/wp-content/uploads/2013/01/ns16420-a-night-ext1-modified_small.jpg">
+		<p>Acme Electronics Offices</p>
+	</section>
+		<div class="section-text">
+			<h1 class="title">Company History</h1>
+			<p>Acme Electronics was founded in 2010 in West Lafayette, Indiana. Purdue University students sought to build a company that created and sold tech accessories for popular new smartphones. As the company grew, it introduced more products and improved upon its manufacturing techniques. More efficient and sustainable manufacturing processes were set in place, and Acme Electronics still works very closely with Purdue University students to improve their processes, and business model. Most recently, students in management information systems courses at Purdue University have helped to create a dynamic website to sell Acme Electronic's products online.</p>
+
+			<h2 class="title">Mission</h2>
+			<p><b>Our mission is to sustainably develop high-quality and affordable technology accessories to meet the needs of users around the world.</b></p>
+			<p id="current-date"></p>
+		</div>
+	</section>
+    <footer>
+        <p>Last updated: <span id="lastUpdated"></span></p>
+        <script>
+        document.getElementById("lastUpdated").innerHTML = new Date().toDateString();
+        </script>
+        <p>Copyright &#169; 2023 ACME Electronics. All Rights Reserved </p>
+    </footer>
+</body>
+</html>
+
+
+

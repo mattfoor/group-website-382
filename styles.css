@@ -1,0 +1,471 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color:white;
+}
+
+a, .btn {
+    transition: all 5ms ease;
+}
+
+/* Desktop Nav */
+
+nav, 
+    .nav-links {
+        display: flex;
+    }
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    background-color: gray;
+}
+
+.nav-links {
+    gap:2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: navy;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+    padding: 3rem;
+    color: navy;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+    align-items: center;
+    background-color: navy;
+}
+
+.section-text {
+    align-self: center;
+    text-align: center;
+}
+
+.section-text-p1 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    width: 15rem;
+}
+.btn-color-1 {
+    border: rgb(53,53,53), 0.5rem solid;
+    border-radius: 18px;
+    padding: 1rem;
+    background: rgb(53,53,53);
+    color: white;
+}
+.btn-color-1:hover {
+    cursor: pointer;
+    background: white;
+    color: navy;
+}
+.btn__container {
+    gap: 1rem;
+}
+
+
+#image-slider {
+    margin: 0; 
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+.slider {
+    width: 474px;
+    height: 474px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 474px;
+    display: flex;
+} 
+
+.slides input {
+    display: none;  
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 474px;
+    height: 474px;
+}
+
+.slider-manual {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    bottom: 20%;
+}
+.manual-btn {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    ;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #ffffe0;
+}
+
+
+
+#radio2:checked ~ .first {
+    margin-left: -20%; 
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+} 
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+footer {
+    background-color: darkgray;
+    color: black;
+    padding: 15px;
+    flex: wrap;
+    margin: 0;
+    padding-top: 1rem;
+}   
+footer p {
+    text-align: center;
+}
+
+#about {
+    background: navy;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#about h1, h2 {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#about p{ 
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+}
+
+#about img {
+    width: 474px;
+    position: relative;
+    display: flex;
+    padding: 3rem;
+}
+
+.img-about {
+    display: table-column;
+    padding: 1rem;
+}
+
+.img-about p {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.member {
+    overflow: auto;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: 20rem;
+}
+
+.member img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.member h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.member p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+.header-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-img img {
+    max-width: 500px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover; 
+}
+#team { 
+    background: navy;
+    color: white;
+    padding: 1rem;
+    
+    
+}
+#team h2 {
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+
+#team h3 {
+    color: white;
+}
+
+#team p {
+    color: white;
+}
+
+#team header {
+    background: darkgrey;
+    color: navy;
+    padding: 1rem;
+    text-align: center;
+}
+#parent p {
+    text-align: center;
+}
+
+#parent a:hover {
+    color:white
+}    
+
+#parent a {
+justify-content: center;
+}
+
+#testimonial {
+    background: navy;
+}
+.header-test {
+    max-width: 50%;
+    text-align: center;
+    padding-left: 26%;
+    align-items: center;
+}
+#testimonial body {
+    height: 100vh;
+    background-color: #000d3f;
+    margin: 0;
+}
+
+#testimonial h1 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2rem;
+    height: 30%;
+    justify-content: space-around;
+    text-align: initial;
+}
+.box, .box1, .box2, .box3, .box4, .box5, .box6 {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 25px;
+    max-width: 400px;
+    background-color: #f0f0f0;
+    border: 1rem solid #ccc;
+    text-align: center;
+    padding: 20rem;
+    margin: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.stars {
+    margin-top: 10px;
+}
+
+.stars .star {
+    font-size: 20px;
+    color: #ccc;
+    align-items: center;
+}
+
+.stars .star.filled {
+    color: #000;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    gap: 3rem;
+    margin: 30px;
+    
+}
+.box5,
+.box6 {
+    width: 50%;
+}
+
+.box p {
+    color: navy;
+    align-items: center;
+}
+
+.prod-header {
+    background-color: darkgray;
+    color: navy;
+    text-align: center;
+}
+
+.products {
+    background-color: navy;
+    color: white;
+}
+
+.products a:hover {
+    color:white;
+}
+
+
+#headphones, #chargers, #phonecases, #customcases {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+#products {
+    background: navy;
+}
+#products.box {
+    color: darkgray;
+}
+
+#products h1 {
+    text-align: center;
+    color: white;
+    padding-top: 3rem;
+}
+
+#products img {
+    width: 75%;
+}
+
+#products h2 {
+    color: navy;
+}
+#customcases img {
+    gap: 3rem;
+    width: 300px;
+}
+
+#contact-link a {
+    padding-bottom: 6rem;
+}
+
